@@ -1,12 +1,10 @@
 package models;
 
-import java.util.Objects;
-
 public class User {
     private static final Long ID = (long) ((Math.random() * 9999) + 1);
     private String username;
     private Integer age;
-    private String Email;
+    private String email;
     private String password;
     private String role;
 
@@ -16,7 +14,7 @@ public class User {
     public User(String username, Integer age, String email, String password, String role) {
         this.username = username;
         this.age = age;
-        Email = email;
+        this.email = email;
         this.password = password;
         this.role = role;
     }
@@ -38,11 +36,11 @@ public class User {
     }
 
     public String getEmail() {
-        return Email;
+        return email;
     }
 
     public void setEmail(String email) {
-        Email = email;
+        this.email = email;
     }
 
     public String getPassword() {
@@ -67,7 +65,7 @@ public class User {
                 "id=" + ID +
                 "username='" + username + '\'' +
                 ", age=" + age +
-                ", Email='" + Email + '\'' +
+                ", Email='" + email + '\'' +
                 ", password='" + password + '\'' +
                 ", role='" + role + '\'' +
                 '}';
