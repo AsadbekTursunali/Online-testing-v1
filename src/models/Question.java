@@ -10,9 +10,6 @@ public class Question {
         this.questionName = questionName;
     }
 
-    public Question() {
-    }
-
     public Subject getQuestionSubject() {
         return questionSubject;
     }

@@ -1,42 +1,27 @@
 package models;
 
-import java.util.Objects;
-
 public class User {
     private static final Long ID = (long) ((Math.random() * 9999) + 1);
-    private String name;
-    private String surname;
+    private String username;
     private Integer age;
-    private String usernameOrEmail;
+    private String email;
     private String password;
     private String role;
 
-    public User(String name, String surname, Integer age, String usernameOrEmail, String password, String role) {
-        this.name = name;
-        this.surname = surname;
+    public User(String username, Integer age, String email, String password, String role) {
+        this.username = username;
         this.age = age;
-        this.usernameOrEmail = usernameOrEmail;
+        this.email = email;
         this.password = password;
         this.role = role;
     }
 
-    public User() {
+    public String getUsername() {
+        return username;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getSurname() {
-        return surname;
-    }
-
-    public void setSurname(String surname) {
-        this.surname = surname;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public Integer getAge() {
@@ -47,12 +32,12 @@ public class User {
         this.age = age;
     }
 
-    public String getUsernameOrEmail() {
-        return usernameOrEmail;
+    public String getEmail() {
+        return email;
     }
 
-    public void setUsernameOrEmail(String usernameOrEmail) {
-        this.usernameOrEmail = usernameOrEmail;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getPassword() {
@@ -75,10 +60,9 @@ public class User {
     public String toString() {
         return "User{" +
                 "id=" + ID +
-                ", name='" + name + '\'' +
-                ", surname='" + surname + '\'' +
+                "username='" + username + '\'' +
                 ", age=" + age +
-                ", usernameOrEmail='" + usernameOrEmail + '\'' +
+                ", Email='" + email + '\'' +
                 ", password='" + password + '\'' +
                 ", role='" + role + '\'' +
                 '}';
