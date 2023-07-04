@@ -6,8 +6,8 @@ public class Subject {
     private static final Long ID = (long) ((Math.random() * 9999) + 1);
     private String subjectName;
 
-    public Subject(String nameOfSubject) {
-        this.subjectName = nameOfSubject;
+    public Subject(String subjectName) {
+        this.subjectName = subjectName;
     }
 
     public String getSubjectName() {

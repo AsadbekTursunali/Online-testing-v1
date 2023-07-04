@@ -8,10 +8,6 @@ public class TestAnswers {
     private String testAnswers;
     private Boolean status;
 
-
-    public TestAnswers() {
-    }
-
     public TestAnswers(Question question, String testAnswers, Boolean status) {
         this.question = question;
         this.testAnswers = testAnswers;
